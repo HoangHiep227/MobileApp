@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="THỰC HÀNH 01"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Khung chứa họ tên + tuổi -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_input_container"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Họ và tên -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:text="Họ và tên"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:hint="Nhập tên"
+                android:background="@drawable/bg_edittext"
+                android:paddingHorizontal="12dp"
+                android:layout_width="180dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <!-- Tuổi -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Tuổi"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/edtAge"
+                android:hint="Nhập tuổi"
+                android:inputType="number"
+                android:background="@drawable/bg_edittext"
+                android:paddingHorizontal="12dp"
+                android:layout_width="180dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Nút kiểm tra -->
+    <Button
+        android:id="@+id/btnCheck"
+        android:text="Kiểm tra"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_button"
+        android:layout_width="180dp"
+        android:layout_height="55dp" />
+
+    <!-- Kết quả -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
