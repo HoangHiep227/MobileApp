@@ -2,8 +2,11 @@ package com.example.myapplication.ui
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -70,5 +73,19 @@ fun TextScreen(navController: NavController) {
             textAlign = TextAlign.Center,
             modifier = Modifier.align(Alignment.Center)
         )
+        Button(
+            onClick = { navController.navigate("welcome") },
+            colors = ButtonDefaults.buttonColors(
+                containerColor = Color(0xFF2196F3),
+                contentColor = Color.White
+            ),
+            shape = RoundedCornerShape(12.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+                .align(Alignment.BottomCenter)
+        ) {
+            Text(text = "Back", fontSize = 18.sp)
+        }
     }
 }

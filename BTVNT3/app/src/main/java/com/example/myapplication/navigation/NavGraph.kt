@@ -21,23 +21,19 @@ fun AppNavGraph(navController: NavHostController = rememberNavController()) {
         composable("textScreen") { TextScreen(navController) }
         composable("imageScreen") { ImageScreen(navController) }
 
-        // === Input ===
         composable("textFieldScreen") { TextFieldScreen(navController) }
         composable("passwordFieldScreen") { PasswordFieldScreen(navController) }
         composable("checkboxScreen") { CheckboxScreen(navController) }
         composable("switchScreen") { SwitchScreen(navController) }
 
-        // === Layout ===
         composable("columnScreen") { ColumnScreen(navController) }
         composable("rowScreen") { RowScreen(navController) }
         composable("boxScreen") { BoxScreen(navController) }
 
-        // === Buttons ===
         composable("buttonScreen") { ButtonScreen(navController) }
         composable("iconButtonScreen") { IconButtonScreen(navController) }
         composable("fabScreen") { FabScreen(navController) }
 
-        // === Containers ===
         composable("cardScreen") { CardScreen(navController) }
         composable("surfaceScreen") { SurfaceScreen(navController) }
     }
