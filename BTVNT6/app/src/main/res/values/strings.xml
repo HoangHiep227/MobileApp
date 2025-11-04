@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UTH SmartTasks</string>
+    <string name="todo_list">Todo List</string>
+    <string name="detail">Detail</string>
+    <string name="no_tasks">No Tasks Yet! Stay productive—add something to do</string>
+    <string name="category">Category</string>
+    <string name="status">Status</string>
+    <string name="priority">Priority</string>
+    <string name="subtasks">Subtasks</string>
+    <string name="attachments">Attachments</string>
+    <string name="app_description">A simple and efficient to-do app</string>
+    <string name="delete">Delete</string>
+    <string name="loading">Loading...</string>
+    <string name="error">Error loading tasks</string>
+</resources>
